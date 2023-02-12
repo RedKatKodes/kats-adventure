@@ -1,0 +1,32 @@
+class_select = input("class? : swordsman, archer, mage: ")
+classes = ["swordsman", "archer", "mage"]
+gender = ["M" , "F"]
+gs = input(gender)
+un = input("Username: ")
+uhp = 0
+usl = 0
+udmg = 0
+um = 0
+uw = ["arrows", "swords", "mana loss"]
+print(class_select)
+print(gs)
+if class_select == "swordsman":
+    uhp = 120
+    usl = 20
+    um = 20
+if class_select == "archer":
+    uhp = 90
+    usl = 40
+    um = 50
+if class_select == "mage":
+    uhp = 50
+    usl = 90
+    um = 100
+if gs == 'M' or 'm':
+    print("character gender: Male")
+if gs == 'F' or 'f':
+    print("character gender: Female")
+print("ur hp: ", uhp)
+print("ur stealth level: ", usl)
+print("your mana:", um)
+
